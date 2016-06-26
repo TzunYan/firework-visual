@@ -1,0 +1,1248 @@
+<!-- D3中文實戰教學 -->
+<!-- http://d3mandaringuide.com/ -->
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <script src ="http://d3js.org/d3.v3.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+	<script src="http://d3js.org/topojson.v1.min.js"></script>
+  <script src="jquery-ui.js"></script>
+  <link rel="stylesheet" type="text/css" src="jquery-ui.min.css"/>
+  </head>
+  <body>
+    <svg id="abc" width="800px" height="600px" viewBox="0 0 800 600"></svg>
+
+  	 <div id="name"></div>
+     <div id="density"></div>
+  	<h1>我的第一個D3</h1>
+    <div id="宜蘭縣" title="Basic dialog">
+        <svg id="Yilan"  width="800" height="500" viewBox="0 0 1400 1000"></svg>
+    </div>
+    <div id="彰化縣" title="Basic dialog">
+        <svg id="Changhua"  width="800" height="500" viewBox="0 0 1400 1000"></svg>
+    </div>
+    <div id="金門縣" title="Basic dialog">
+        <svg id="Kimmen"  width="800" height="500" viewBox="0 0 1400 1000" ></svg>
+    </div>
+    <div id="臺東縣" title="Basic dialog">
+        <svg id="Taitung"  width="800" height="500" viewBox="0 0 1400 1000" ></svg>
+    </div>
+    <div id="雲林縣" title="Basic dialog">
+        <svg id="Yunlin"  width="800" height="500" viewBox="0 0 1400 1000" ></svg>
+    </div>
+    <div id="南投縣" title="Basic dialog">
+        <svg id="Nantou"  width="800" height="500" viewBox="0 0 1400 1000" ></svg>
+    </div>
+    <div id="嘉義縣" title="Basic dialog">
+        <svg id="Chiayi"  width="800" height="500" viewBox="0 0 1400 1000" ></svg>
+    </div>
+    <div id="屏東縣" title="Basic dialog">
+        <svg id="Pingtung"  width="800" height="500" viewBox="0 0 1400 1000" ></svg>
+    </div>
+    <div id="花蓮縣" title="Basic dialog">
+        <svg id="Hualien"  width="800" height="500" viewBox="0 0 1400 1000" ></svg>
+    </div>
+    <div id="澎湖縣" title="Basic dialog">
+        <svg id="Penghu"  width="800" height="500" viewBox="0 0 1400 1000" ></svg>
+    </div>
+    <div id="基隆市" title="Basic dialog">
+        <svg id="KeelungC"  width="800" height="500" viewBox="0 0 1400 1000" ></svg>
+    </div>
+    <div id="新竹市" title="Basic dialog">
+        <svg id="HsinchuC"  width="800" height="500" viewBox="0 0 1400 1000" ></svg>
+    </div>
+    <div id="嘉義市" title="Basic dialog">
+        <svg id="ChiayiC"  width="800" height="500" viewBox="0 0 1400 1000" ></svg>
+    </div>
+    <div id="臺北市" title="Basic dialog">
+        <svg id="TaipeiC"  width="800" height="500" viewBox="0 0 1400 1000" ></svg>
+    </div>
+    <div id="高雄市" title="Basic dialog">
+        <svg id="KaohsiungC"  width="800" height="500" viewBox="0 0 1400 1000" ></svg>
+    </div>
+    <div id="新北市" title="Basic dialog">
+        <svg id="NewTaipei"  width="800" height="500" viewBox="0 0 1400 1000" ></svg>
+    </div>
+    <div id="臺中市" title="Basic dialog">
+        <svg id="TaichungC"  width="800" height="500" viewBox="0 0 1400 1000" ></svg>
+    </div>
+    <div id="臺南市" title="Basic dialog">
+        <svg id="TainanC"  width="800" height="500" viewBox="0 0 1400 1000" ></svg>
+    </div>
+    <div id="桃園市" title="Basic dialog">
+        <svg id="TaoyuanC"  width="800" height="500" viewBox="0 0 1400 1000" ></svg>
+    </div>
+    <div id="苗栗縣" title="Basic dialog">
+        <svg id="Miaoli"  width="800" height="500" viewBox="0 0 1400 1000" ></svg>
+    </div>
+    <div id="新竹縣" title="Basic dialog">
+        <svg id="Hsinchu"  width="800" height="500" viewBox="0 0 1400 1000" ></svg>
+    </div>
+  </body>
+</html>
+<script>
+$(function() {
+    $( "#新竹縣" ).dialog({
+      autoOpen: false,
+      modal: true,
+      scroll: false,
+      height: 'auto',
+      minHeight: 600,
+      minWidth: 800,
+      width: 'auto',
+      buttons: {
+        "Delete all items": function() {
+          $( this ).dialog( "close" );
+        },
+        Cancel: function() {
+          $( this ).dialog( "close" );
+        }
+      },
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+  });
+$(function() {
+    $( "#苗栗縣" ).dialog({
+      autoOpen: false,
+      modal: true,
+      scroll: false,
+      height: 'auto',
+      minHeight: 600,
+      minWidth: 800,
+      width: 'auto',
+      buttons: {
+        "Delete all items": function() {
+          $( this ).dialog( "close" );
+        },
+        Cancel: function() {
+          $( this ).dialog( "close" );
+        }
+      },
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+  });
+$(function() {
+    $( "#桃園市" ).dialog({
+      autoOpen: false,
+      modal: true,
+      scroll: false,
+      height: 'auto',
+      minHeight: 600,
+      minWidth: 800,
+      width: 'auto',
+      buttons: {
+        "Delete all items": function() {
+          $( this ).dialog( "close" );
+        },
+        Cancel: function() {
+          $( this ).dialog( "close" );
+        }
+      },
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+  });
+  $(function() {
+    $( "#金門縣" ).dialog({
+      autoOpen: false,
+      modal: true,
+      scroll: false,
+      height: 'auto',
+      minHeight: 600,
+      minWidth: 800,
+      width: 'auto',
+      buttons: {
+        "Delete all items": function() {
+          $( this ).dialog( "close" );
+        },
+        Cancel: function() {
+          $( this ).dialog( "close" );
+        }
+      },
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+  });
+  $(function() {
+    $( "#宜蘭縣" ).dialog({
+      autoOpen: false,
+      modal: true,
+      scroll: false,
+      height: 'auto',
+      minHeight: 600,
+      minWidth: 800,
+      width: 'auto',
+      buttons: {
+        "Delete all items": function() {
+          $( this ).dialog( "close" );
+        },
+        Cancel: function() {
+          $( this ).dialog( "close" );
+        }
+      },
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+  });
+  $(function() {
+    $( "#彰化縣" ).dialog({
+      autoOpen: false,
+      modal: true,
+      scroll: false,
+      height: 'auto',
+      minHeight: 600,
+      minWidth: 800,
+      width: 'auto',
+      buttons: {
+        "Delete all items": function() {
+          $( this ).dialog( "close" );
+        },
+        Cancel: function() {
+          $( this ).dialog( "close" );
+        }
+      },
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+  });
+  $(function() {
+    $( "#臺東縣" ).dialog({
+      autoOpen: false,
+      modal: true,
+      scroll: false,
+      height: 'auto',
+      minHeight: 600,
+      minWidth: 800,
+      width: 'auto',
+      buttons: {
+        "Delete all items": function() {
+          $( this ).dialog( "close" );
+        },
+        Cancel: function() {
+          $( this ).dialog( "close" );
+        }
+      },
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+  });
+  $(function() {
+    $( "#雲林縣" ).dialog({
+      autoOpen: false,
+      modal: true,
+      scroll: false,
+      height: 'auto',
+      minHeight: 600,
+      minWidth: 800,
+      width: 'auto',
+      buttons: {
+        "Delete all items": function() {
+          $( this ).dialog( "close" );
+        },
+        Cancel: function() {
+          $( this ).dialog( "close" );
+        }
+      },
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+  });
+  $(function() {
+    $( "#南投縣" ).dialog({
+      autoOpen: false,
+      modal: true,
+      scroll: false,
+      height: 'auto',
+      minHeight: 600,
+      minWidth: 800,
+      width: 'auto',
+      buttons: {
+        "Delete all items": function() {
+          $( this ).dialog( "close" );
+        },
+        Cancel: function() {
+          $( this ).dialog( "close" );
+        }
+      },
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+  });
+  $(function() {
+    $( "#嘉義縣" ).dialog({
+      autoOpen: false,
+      modal: true,
+      scroll: false,
+      height: 'auto',
+      minHeight: 600,
+      minWidth: 800,
+      width: 'auto',
+      buttons: {
+        "Delete all items": function() {
+          $( this ).dialog( "close" );
+        },
+        Cancel: function() {
+          $( this ).dialog( "close" );
+        }
+      },
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+  });
+  $(function() {
+    $( "#屏東縣" ).dialog({
+      autoOpen: false,
+      modal: true,
+      scroll: false,
+      height: 'auto',
+      minHeight: 600,
+      minWidth: 800,
+      width: 'auto',
+      buttons: {
+        "Delete all items": function() {
+          $( this ).dialog( "close" );
+        },
+        Cancel: function() {
+          $( this ).dialog( "close" );
+        }
+      },
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+  });
+  $(function() {
+    $( "#花蓮縣" ).dialog({
+      autoOpen: false,
+      modal: true,
+      scroll: false,
+      height: 'auto',
+      minHeight: 600,
+      minWidth: 800,
+      width: 'auto',
+      buttons: {
+        "Delete all items": function() {
+          $( this ).dialog( "close" );
+        },
+        Cancel: function() {
+          $( this ).dialog( "close" );
+        }
+      },
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+  });
+  $(function() {
+    $( "#澎湖縣" ).dialog({
+      autoOpen: false,
+      modal: true,
+      scroll: false,
+      height: 'auto',
+      minHeight: 600,
+      minWidth: 800,
+      width: 'auto',
+      buttons: {
+        "Delete all items": function() {
+          $( this ).dialog( "close" );
+        },
+        Cancel: function() {
+          $( this ).dialog( "close" );
+        }
+      },
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+  });
+  $(function() {
+    $( "#基隆市" ).dialog({
+      autoOpen: false,
+      modal: true,
+      scroll: false,
+      height: 'auto',
+      minHeight: 600,
+      minWidth: 800,
+      width: 'auto',
+      buttons: {
+        "Delete all items": function() {
+          $( this ).dialog( "close" );
+        },
+        Cancel: function() {
+          $( this ).dialog( "close" );
+        }
+      },
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+  });
+  $(function() {
+    $( "#新竹市" ).dialog({
+      autoOpen: false,
+      modal: true,
+      scroll: false,
+      height: 'auto',
+      minHeight: 600,
+      minWidth: 800,
+      width: 'auto',
+      buttons: {
+        "Delete all items": function() {
+          $( this ).dialog( "close" );
+        },
+        Cancel: function() {
+          $( this ).dialog( "close" );
+        }
+      },
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+  });
+  $(function() {
+    $( "#嘉義市" ).dialog({
+      autoOpen: false,
+      modal: true,
+      scroll: false,
+      height: 'auto',
+      minHeight: 600,
+      minWidth: 800,
+      width: 'auto',
+      buttons: {
+        "Delete all items": function() {
+          $( this ).dialog( "close" );
+        },
+        Cancel: function() {
+          $( this ).dialog( "close" );
+        }
+      },
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+  });
+  $(function() {
+    $( "#臺北市" ).dialog({
+      autoOpen: false,
+      modal: true,
+      scroll: false,
+      height: 'auto',
+      minHeight: 600,
+      minWidth: 800,
+      width: 'auto',
+      buttons: {
+        "Delete all items": function() {
+          $( this ).dialog( "close" );
+        },
+        Cancel: function() {
+          $( this ).dialog( "close" );
+        }
+      },
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+  });
+  $(function() {
+    $( "#高雄市" ).dialog({
+      autoOpen: false,
+      modal: true,
+      scroll: false,
+      height: 'auto',
+      minHeight: 600,
+      minWidth: 800,
+      width: 'auto',
+      buttons: {
+        "Delete all items": function() {
+          $( this ).dialog( "close" );
+        },
+        Cancel: function() {
+          $( this ).dialog( "close" );
+        }
+      },
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+  });
+  $(function() {
+    $( "#新北市" ).dialog({
+      autoOpen: false,
+      modal: true,
+      scroll: false,
+      height: 'auto',
+      minHeight: 600,
+      minWidth: 800,
+      width: 'auto',
+      buttons: {
+        "Delete all items": function() {
+          $( this ).dialog( "close" );
+        },
+        Cancel: function() {
+          $( this ).dialog( "close" );
+        }
+      },
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+  });
+  $(function() {
+    $( "#臺中市" ).dialog({
+      autoOpen: false,
+      modal: true,
+      scroll: false,
+      height: 'auto',
+      minHeight: 600,
+      minWidth: 800,
+      width: 'auto',
+      buttons: {
+        "Delete all items": function() {
+          $( this ).dialog( "close" );
+        },
+        Cancel: function() {
+          $( this ).dialog( "close" );
+        }
+      },
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+  });
+  $(function() {
+    $( "#臺南市" ).dialog({
+      autoOpen: false,
+      modal: true,
+      scroll: false,
+      height: 'auto',
+      minHeight: 600,
+      minWidth: 800,
+      width: 'auto',
+      buttons: {
+        "Delete all items": function() {
+          $( this ).dialog( "close" );
+        },
+        Cancel: function() {
+          $( this ).dialog( "close" );
+        }
+      },
+      show: {
+        effect: "blind",
+        duration: 1000
+      },
+      hide: {
+        effect: "explode",
+        duration: 1000
+      }
+    });
+  });
+  var density = {
+    "臺北市": 9952.60, //a01
+    "嘉義市": 4512.66, //a02
+    "新竹市": 4151.27, //a03
+    "基隆市": 2809.27, //a04
+    "新北市": 1932.91, //a05
+    "桃園市": 1692.09, //a06
+    "臺中市": 1229.62, //a07
+    "彰化縣": 1201.65, //a08
+    "高雄市": 942.97,  //a09
+    "臺南市": 860.02,  //a10
+    "金門縣": 847.16,  //a11
+    "澎湖縣": 802.83,  //a12
+    "雲林縣": 545.57,  //a13
+    "連江縣": 435.21,  //a14
+    "新竹縣": 376.86,  //a15
+    "苗栗縣": 311.49,  //a16
+    "屏東縣": 305.03,  //a17
+    "嘉義縣": 275.18,  //a18
+    "宜蘭縣": 213.89,  //a19
+    "南投縣": 125.10,  //a20
+    "花蓮縣": 71.96,   //a21
+    "臺東縣": 63.75    //a22
+  };
+  d3.json("county.json", function(topodata) {
+    var features = topojson.feature(topodata, topodata.objects["County_MOI_1041215"]).features;
+    var color = d3.scale.linear().domain([0,10000]).range(["#090","#f00"]);
+	   var path = d3.geo.path().projection( // 路徑產生器
+   	d3.geo.mercator().center([121,24]).scale(6000));// 座標變換函式
+    for(idx=features.length - 1;idx>=0;idx--){
+    	features[idx].density = density[features[idx].properties.C_Name];
+	}
+    d3.select("#abc").selectAll("path").data(features).enter().append("path");
+    
+    function update() {
+      d3.select("#abc").selectAll("path").attr({
+        "d": path,
+        "fill": function (d) { return color(d.density); }
+      }).on("mousedown", function(d) {
+        $("#name").text(d.properties.C_Name);
+        //$("#density").text(sJSON.stringify(feature));
+        $( "#"+d.properties.C_Name ).dialog( "open" );
+      });
+    }
+    d3.select("#abc").on("mousedown", function() {
+      update();
+    });
+    update();
+  });
+    d3.json("金門縣.json", function(data) {
+    var features = data;
+    //alert(JSON.stringify(features));
+    var color = d3.scale.linear().domain([0,10000]).range(["#090","#f00"]);
+    var path = d3.geo.path().projection( // 路徑產生器
+    d3.geo.mercator().center([118.25,24.5]).scale(120000));// 標變換函式座
+
+    for(idx=features.length - 1;idx>=0;idx--){
+      features[idx].density = density[features[idx].properties.C_Name];
+  }
+    d3.select("#Kimmen").selectAll("path").data(features).enter().append("path");
+    function updale() {
+      d3.select("#Kimmen").selectAll("path").attr({
+        "d": path,
+        "fill": function (d) { return color(d.density); }
+      })
+    }
+    updale();
+  });
+  d3.json("宜蘭縣.json", function(data) {
+    var features = data;
+    //alert(JSON.stringify(features));
+    var color = d3.scale.linear().domain([0,10000]).range(["#090","#f00"]);
+    var path = d3.geo.path().projection( // 路徑產生器
+    d3.geo.mercator().center([121,25]).scale(50000));// 標變換函式座
+
+    for(idx=features.length - 1;idx>=0;idx--){
+      features[idx].density = density[features[idx].properties.C_Name];
+  }
+    d3.select("#Yilan").selectAll("path").data(features).enter().append("path");
+    function updale() {
+      d3.select("#Yilan").selectAll("path").attr({
+        "d": path,
+        "stroke":"BLACK",
+        "stroke-width":"2",
+        "fill": function (d) { return color(d.density); }
+      })
+
+    }
+    updale();
+  });
+    d3.json("彰化縣.json", function(data) {
+    var features = data;
+    //alert(JSON.stringify(features));
+    var color = d3.scale.linear().domain([0,10000]).range(["#090","#f00"]);
+    var path = d3.geo.path().projection( // 路徑產生器
+    d3.geo.mercator().center([120.25,24.3]).scale(60000));// 標變換函式座
+
+    for(idx=features.length - 1;idx>=0;idx--){
+      features[idx].density = density[features[idx].properties.C_Name];
+  }
+    d3.select("#Changhua").selectAll("path").data(features).enter().append("path");
+    function updale() {
+      d3.select("#Changhua").selectAll("path").attr({
+        "d": path,
+        "stroke":"BLACK",
+        "stroke-width":"2",
+        "fill": function (d) { return color(d.density); }
+      })
+
+    }
+    updale();
+  });
+    d3.json("臺東縣.json", function(data) {
+    var features = data;
+    //alert(JSON.stringify(features));
+    var color = d3.scale.linear().domain([0,10000]).range(["#090","#f00"]);
+    var path = d3.geo.path().projection( // 路徑產生器
+    d3.geo.mercator().center([120.25,24.3]).scale(6000));// 標變換函式座
+
+    for(idx=features.length - 1;idx>=0;idx--){
+      features[idx].density = density[features[idx].properties.C_Name];
+  }
+    d3.select("#Taitung").selectAll("path").data(features).enter().append("path");
+    function updale() {
+      d3.select("#Taitung").selectAll("path").attr({
+        "d": path,
+        "stroke":"BLACK",
+        "stroke-width":"2",
+        "fill": function (d) { return color(d.density); }
+      })
+
+    }
+    updale();
+  });
+d3.json("雲林縣.json", function(data) {
+    var features = data;
+    //alert(JSON.stringify(features));
+    var color = d3.scale.linear().domain([0,10000]).range(["#090","#f00"]);
+    var path = d3.geo.path().projection( // 路徑產生器
+    d3.geo.mercator().center([120.25,24.3]).scale(6000));// 標變換函式座
+
+    for(idx=features.length - 1;idx>=0;idx--){
+      features[idx].density = density[features[idx].properties.C_Name];
+  }
+    d3.select("#Yunlin").selectAll("path").data(features).enter().append("path");
+    function updale() {
+      d3.select("#Yunlin").selectAll("path").attr({
+        "d": path,
+        "stroke":"BLACK",
+        "stroke-width":"2",
+        "fill": function (d) { return color(d.density); }
+      })
+
+    }
+    updale();
+  });
+d3.json("南投縣.json", function(data) {
+    var features = data;
+    //alert(JSON.stringify(features));
+    var color = d3.scale.linear().domain([0,10000]).range(["#090","#f00"]);
+    var path = d3.geo.path().projection( // 路徑產生器
+    d3.geo.mercator().center([120.25,24.3]).scale(6000));// 標變換函式座
+
+    for(idx=features.length - 1;idx>=0;idx--){
+      features[idx].density = density[features[idx].properties.C_Name];
+  }
+    d3.select("#Nantou").selectAll("path").data(features).enter().append("path");
+    function updale() {
+      d3.select("#Nantou").selectAll("path").attr({
+        "d": path,
+        "stroke":"BLACK",
+        "stroke-width":"2",
+        "fill": function (d) { return color(d.density); }
+      })
+
+    }
+    updale();
+  });
+d3.json("嘉義縣.json", function(data) {
+    var features = data;
+    //alert(JSON.stringify(features));
+    var color = d3.scale.linear().domain([0,10000]).range(["#090","#f00"]);
+    var path = d3.geo.path().projection( // 路徑產生器
+    d3.geo.mercator().center([120.25,24.3]).scale(6000));// 標變換函式座
+
+    for(idx=features.length - 1;idx>=0;idx--){
+      features[idx].density = density[features[idx].properties.C_Name];
+  }
+    d3.select("#Chiayi").selectAll("path").data(features).enter().append("path");
+    function updale() {
+      d3.select("#Chiayi").selectAll("path").attr({
+        "d": path,
+        "stroke":"BLACK",
+        "stroke-width":"2",
+        "fill": function (d) { return color(d.density); }
+      })
+    }
+    updale();
+  });
+d3.json("屏東縣.json", function(data) {
+    var features = data;
+    //alert(JSON.stringify(features));
+    var color = d3.scale.linear().domain([0,10000]).range(["#090","#f00"]);
+    var path = d3.geo.path().projection( // 路徑產生器
+    d3.geo.mercator().center([120.25,24.3]).scale(6000));// 標變換函式座
+
+    for(idx=features.length - 1;idx>=0;idx--){
+      features[idx].density = density[features[idx].properties.C_Name];
+  }
+    d3.select("#Pingtung").selectAll("path").data(features).enter().append("path");
+    function updale() {
+      d3.select("#Pingtung").selectAll("path").attr({
+        "d": path,
+        "stroke":"BLACK",
+        "stroke-width":"2",
+        "fill": function (d) { return color(d.density); }
+      })
+    }
+    updale();
+  });
+d3.json("花蓮縣.json", function(data) {
+    var features = data;
+    //alert(JSON.stringify(features));
+    var color = d3.scale.linear().domain([0,10000]).range(["#090","#f00"]);
+    var path = d3.geo.path().projection( // 路徑產生器
+    d3.geo.mercator().center([120.25,24.3]).scale(6000));// 標變換函式座
+
+    for(idx=features.length - 1;idx>=0;idx--){
+      features[idx].density = density[features[idx].properties.C_Name];
+  }
+    d3.select("#Hualien").selectAll("path").data(features).enter().append("path");
+    function updale() {
+      d3.select("#Hualien").selectAll("path").attr({
+        "d": path,
+        "stroke":"BLACK",
+        "stroke-width":"2",
+        "fill": function (d) { return color(d.density); }
+      })
+    }
+    updale();
+  });
+d3.json("澎湖縣.json", function(data) {
+    var features = data;
+    //alert(JSON.stringify(features));
+    var color = d3.scale.linear().domain([0,10000]).range(["#090","#f00"]);
+    var path = d3.geo.path().projection( // 路徑產生器
+    d3.geo.mercator().center([120.25,24.3]).scale(6000));// 標變換函式座
+
+    for(idx=features.length - 1;idx>=0;idx--){
+      features[idx].density = density[features[idx].properties.C_Name];
+  }
+    d3.select("#Penghu").selectAll("path").data(features).enter().append("path");
+    function updale() {
+      d3.select("#Penghu").selectAll("path").attr({
+        "d": path,
+        "stroke":"BLACK",
+        "stroke-width":"2",
+        "fill": function (d) { return color(d.density); }
+      })
+    }
+    updale();
+  });
+d3.json("基隆市.json", function(data) {
+    var features = data;
+    //alert(JSON.stringify(features));
+    var color = d3.scale.linear().domain([0,10000]).range(["#090","#f00"]);
+    var path = d3.geo.path().projection( // 路徑產生器
+    d3.geo.mercator().center([120.25,24.3]).scale(6000));// 標變換函式座
+
+    for(idx=features.length - 1;idx>=0;idx--){
+      features[idx].density = density[features[idx].properties.C_Name];
+  }
+    d3.select("#KeelungC").selectAll("path").data(features).enter().append("path");
+    function updale() {
+      d3.select("#KeelungC").selectAll("path").attr({
+        "d": path,
+        "stroke":"BLACK",
+        "stroke-width":"2",
+        "fill": function (d) { return color(d.density); }
+      })
+    }
+    updale();
+  });
+d3.json("新竹市.json", function(data) {
+    var features = data;
+    //alert(JSON.stringify(features));
+    var color = d3.scale.linear().domain([0,10000]).range(["#090","#f00"]);
+    var path = d3.geo.path().projection( // 路徑產生器
+    d3.geo.mercator().center([120.25,24.3]).scale(6000));// 標變換函式座
+
+    for(idx=features.length - 1;idx>=0;idx--){
+      features[idx].density = density[features[idx].properties.C_Name];
+  }
+    d3.select("#HsinchuC").selectAll("path").data(features).enter().append("path");
+    function updale() {
+      d3.select("#HsinchuC").selectAll("path").attr({
+        "d": path,
+        "stroke":"BLACK",
+        "stroke-width":"2",
+        "fill": function (d) { return color(d.density); }
+      })
+    }
+    updale();
+  });
+d3.json("嘉義市.json", function(data) {
+    var features = data;
+    //alert(JSON.stringify(features));
+    var color = d3.scale.linear().domain([0,10000]).range(["#090","#f00"]);
+    var path = d3.geo.path().projection( // 路徑產生器
+    d3.geo.mercator().center([120.25,24.3]).scale(6000));// 標變換函式座
+
+    for(idx=features.length - 1;idx>=0;idx--){
+      features[idx].density = density[features[idx].properties.C_Name];
+  }
+    d3.select("#ChiayiC").selectAll("path").data(features).enter().append("path");
+    function updale() {
+      d3.select("#ChiayiC").selectAll("path").attr({
+        "d": path,
+        "stroke":"BLACK",
+        "stroke-width":"2",
+        "fill": function (d) { return color(d.density); }
+      })
+    }
+    updale();
+  });
+d3.json("臺北市.json", function(data) {
+    var features = data;
+    //alert(JSON.stringify(features));
+    var color = d3.scale.linear().domain([0,10000]).range(["#090","#f00"]);
+    var path = d3.geo.path().projection( // 路徑產生器
+    d3.geo.mercator().center([120.25,24.3]).scale(6000));// 標變換函式座
+
+    for(idx=features.length - 1;idx>=0;idx--){
+      features[idx].density = density[features[idx].properties.C_Name];
+  }
+    d3.select("#TaipeiC").selectAll("path").data(features).enter().append("path");
+    function updale() {
+      d3.select("#TaipeiC").selectAll("path").attr({
+        "d": path,
+        "stroke":"BLACK",
+        "stroke-width":"2",
+        "fill": function (d) { return color(d.density); }
+      })
+    }
+    updale();
+  });
+d3.json("高雄市.json", function(data) {
+    var features = data;
+    //alert(JSON.stringify(features));
+    var color = d3.scale.linear().domain([0,10000]).range(["#090","#f00"]);
+    var path = d3.geo.path().projection( // 路徑產生器
+    d3.geo.mercator().center([120.25,24.3]).scale(6000));// 標變換函式座
+
+    for(idx=features.length - 1;idx>=0;idx--){
+      features[idx].density = density[features[idx].properties.C_Name];
+  }
+    d3.select("#KaohsiungC").selectAll("path").data(features).enter().append("path");
+    function updale() {
+      d3.select("#KaohsiungC").selectAll("path").attr({
+        "d": path,
+        "stroke":"BLACK",
+        "stroke-width":"2",
+        "fill": function (d) { return color(d.density); }
+      })
+    }
+    updale();
+  });
+d3.json("新北市.json", function(data) {
+    var features = data;
+    //alert(JSON.stringify(features));
+    var color = d3.scale.linear().domain([0,10000]).range(["#090","#f00"]);
+    var path = d3.geo.path().projection( // 路徑產生器
+    d3.geo.mercator().center([120.25,24.3]).scale(6000));// 標變換函式座
+
+    for(idx=features.length - 1;idx>=0;idx--){
+      features[idx].density = density[features[idx].properties.C_Name];
+  }
+    d3.select("#NewTaipei").selectAll("path").data(features).enter().append("path");
+    function updale() {
+      d3.select("#NewTaipei").selectAll("path").attr({
+        "d": path,
+        "stroke":"BLACK",
+        "stroke-width":"2",
+        "fill": function (d) { return color(d.density); }
+      })
+    }
+    updale();
+  });
+d3.json("臺中市.json", function(data) {
+    var features = data;
+    //alert(JSON.stringify(features));
+    var color = d3.scale.linear().domain([0,10000]).range(["#090","#f00"]);
+    var path = d3.geo.path().projection( // 路徑產生器
+    d3.geo.mercator().center([120.25,24.3]).scale(6000));// 標變換函式座
+
+    for(idx=features.length - 1;idx>=0;idx--){
+      features[idx].density = density[features[idx].properties.C_Name];
+  }
+    d3.select("#TaichungC").selectAll("path").data(features).enter().append("path");
+    function updale() {
+      d3.select("#TaichungC").selectAll("path").attr({
+        "d": path,
+        "stroke":"BLACK",
+        "stroke-width":"2",
+        "fill": function (d) { return color(d.density); }
+      })
+    }
+    updale();
+  });
+d3.json("臺南市.json", function(data) {
+    var features = data;
+    //alert(JSON.stringify(features));
+    var color = d3.scale.linear().domain([0,10000]).range(["#090","#f00"]);
+    var path = d3.geo.path().projection( // 路徑產生器
+    d3.geo.mercator().center([120.25,24.3]).scale(6000));// 標變換函式座
+
+    for(idx=features.length - 1;idx>=0;idx--){
+      features[idx].density = density[features[idx].properties.C_Name];
+  }
+    d3.select("#TainanC").selectAll("path").data(features).enter().append("path");
+    function updale() {
+      d3.select("#TainanC").selectAll("path").attr({
+        "d": path,
+        "stroke":"BLACK",
+        "stroke-width":"2",
+        "fill": function (d) { return color(d.density); }
+      })
+    }
+    updale();
+  });
+d3.json("桃園市.json", function(data) {
+    var features = data;
+    //alert(JSON.stringify(features));
+    var color = d3.scale.linear().domain([0,10000]).range(["#090","#f00"]);
+    var path = d3.geo.path().projection( // 路徑產生器
+    d3.geo.mercator().center([120.25,24.3]).scale(6000));// 標變換函式座
+
+    for(idx=features.length - 1;idx>=0;idx--){
+      features[idx].density = density[features[idx].properties.C_Name];
+  }
+    d3.select("#TaoyuanC").selectAll("path").data(features).enter().append("path");
+    function updale() {
+      d3.select("#TaoyuanC").selectAll("path").attr({
+        "d": path,
+        "stroke":"BLACK",
+        "stroke-width":"2",
+        "fill": function (d) { return color(d.density); }
+      })
+    }
+    updale();
+  });
+d3.json("苗栗縣.json", function(data) {
+    var features = data;
+    //alert(JSON.stringify(features));
+    var color = d3.scale.linear().domain([0,10000]).range(["#090","#f00"]);
+    var path = d3.geo.path().projection( // 路徑產生器
+    d3.geo.mercator().center([120.25,24.3]).scale(6000));// 標變換函式座
+
+    for(idx=features.length - 1;idx>=0;idx--){
+      features[idx].density = density[features[idx].properties.C_Name];
+  }
+    d3.select("#Miaoli").selectAll("path").data(features).enter().append("path");
+    function updale() {
+      d3.select("#Miaoli").selectAll("path").attr({
+        "d": path,
+        "stroke":"BLACK",
+        "stroke-width":"2",
+        "fill": function (d) { return color(d.density); }
+      })
+    }
+    updale();
+  });
+d3.json("新竹縣.json", function(data) {
+    var features = data;
+    //alert(JSON.stringify(features));
+    var color = d3.scale.linear().domain([0,10000]).range(["#090","#f00"]);
+    var path = d3.geo.path().projection( // 路徑產生器
+    d3.geo.mercator().center([120.25,24.3]).scale(6000));// 標變換函式座
+
+    for(idx=features.length - 1;idx>=0;idx--){
+      features[idx].density = density[features[idx].properties.C_Name];
+  }
+    d3.select("#Hsinchu").selectAll("path").data(features).enter().append("path");
+    function updale() {
+      d3.select("#Hsinchu").selectAll("path").attr({
+        "d": path,
+        "stroke":"BLACK",
+        "stroke-width":"2",
+        "fill": function (d) { return color(d.density); }
+      })
+    }
+    updale();
+  });
+    d3.json("town-boundary.json",function (data) {
+      var aaas = data.features;
+      var temp ={};
+      var id=0;
+      var c10007 ={};
+      var udi = 0;
+      var record ="[";
+      for (var i = aaas.length - 1; i >= 0; i--) {
+        temp[id] = aaas[i];
+        id++;
+      }
+      $("#density").text(JSON.stringify(temp[300].properties.County_ID));
+
+      for (var i = aaas.length - 1; i >= 0; i--) {
+        if(JSON.stringify(temp[i].properties.County_ID)=="\"10004\""){ //
+          c10007[udi]= temp[i];
+         udi++;
+        }
+      }
+      alert(udi);
+      for (var i = udi - 1; i >= 0; i--) {
+         record+=JSON.stringify(c10007[i]);
+         if(i!=0){
+          record+=",";   
+         }
+      }
+      record+="]";  
+      $("#density").text(record);
+    
+      //$("#density").text(record);      
+    /*var features = data.features;
+    var color = d3.scale.linear().domain([0,10000]).range(["#090","#f00"]);
+    var path = d3.geo.path().projection( // 路徑產生器
+    d3.geo.mercator().center([121,24]).scale(6000));// 座標變換函式
+
+    for(idx=features.length - 1;idx>=0;idx--){
+      features[idx].density = density[features[idx].properties.C_Name];
+  }
+    d3.select("#abd").selectAll("path").data(features).enter().append("path");
+    function updale() {
+      d3.select("#abd").selectAll("path").attr({
+        "d": path,
+        "fill": function (d) { return color(d.density); }
+      })
+    }
+    updale();*/
+    })
+    
+</script>
+
+
+
+
+
+<!--
+<script type="text/javascript">
+        d3.select("#dialog").selectAll("path").data(features).enter().append("path");
+  	/*var svg_width = 500;
+  	var svg_height = 200;
+	var bar_padding = 5;
+ 	var dataset = [ 30, 20, 10, 40, 45 , 25, 15, 35 , 18];
+ 	var svg = d3.select("body")
+        .append("svg")
+        .attr("width", svg_width)
+        .attr("height", svg_height);
+  	svg.selectAll("rect")
+         .data(dataset)
+         .enter()
+         .append("rect")
+         .attr("x", function(d, i) {
+            return i * (svg_width / dataset.length);
+         })
+         .attr("y", function(d) {
+            return svg_height - (d * 4);
+         })
+         .attr("width", svg_width / dataset.length - bar_padding)
+         .attr("height", function(d) {
+            return d * 4;
+         })
+   		.attr("height", function(d) {
+  			return d * 4;
+		})	
+		.attr("fill", function(d) {
+		 	return "rgb(" +  d*5 + ",0 ,0 )";
+		});
+	svg.selectAll("text")
+	     .data(dataset)
+	     .enter()
+	     .append("text")
+	     .text(function(d) {
+	        return d;
+	     })
+	     .attr("text-anchor", "middle")
+	     .attr("x", function(d, i) {
+	        return i * (svg_width / dataset.length) + (svg_width / dataset.length - bar_padding) / 2;
+	     })
+	     .attr("y", function(d) {
+	        return svg_height - (d * 4) + 20;
+	     })
+	     .attr("font-family", "sans-serif")
+	     .attr("font-size", "20px")
+	     .attr("fill", "white");*/
+</script>-->

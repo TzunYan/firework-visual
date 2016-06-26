@@ -1,0 +1,96 @@
+{
+    "name": "地點",
+    "location": [
+        {
+            "name": "七股區",
+            "die": 1,
+            "lat": 23.1195166,
+            "log": 120.1011836,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "下營區",
+            "die": 1,
+            "lat": 23.2292915,
+            "log": 120.2685799,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "佳里區",
+            "die": 1,
+            "lat": 23.1694465,
+            "log": 120.1704766,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "柳營區",
+            "die": 1,
+            "lat": 23.2806957,
+            "log": 120.3550808,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "將軍區",
+            "die": 1,
+            "lat": 23.216876,
+            "log": 120.137211,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "新市區",
+            "die": 1,
+            "lat": 23.0807324,
+            "log": 120.2858846,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "新營區",
+            "die": 1,
+            "lat": 23.3119567,
+            "log": 120.3089541,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "歸仁區",
+            "die": 1,
+            "lat": 22.9519268,
+            "log": 120.2858846,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "東區",
+            "die": 2,
+            "lat": 22.98133,
+            "log": 120.2224227,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "南區",
+            "die": 2,
+            "lat": 22.9563522,
+            "log": 120.1877943,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "北區",
+            "die": 3,
+            "lat": 23.008515,
+            "log": 120.2079953,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "永康區",
+            "die": 3,
+            "lat": 23.0211779,
+            "log": 120.2628111,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "安南區",
+            "die": 3,
+            "lat": 23.0585336,
+            "log": 120.1358346,
+            "img": "img/angel.png"
+        }
+    ]
+}

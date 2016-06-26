@@ -1,0 +1,19 @@
+{
+    "name": "地點",
+    "location": [
+        {
+            "name": "東區",
+            "die": 2,
+            "lat": 24.7885664,
+            "log": 120.9607748,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "香山區",
+            "die": 2,
+            "lat": 24.7798216,
+            "log": 120.9302603,
+            "img": "img/angel.png"
+        }
+    ]
+}

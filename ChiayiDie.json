@@ -1,0 +1,54 @@
+{
+    "name": "地點",
+    "location": [
+        {
+            "name": "大林鎮",
+            "die": 1,
+            "lat": 23.5990934,
+            "log": 120.4703258,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "太保市",
+            "die": 2,
+            "lat": 23.4787035,
+            "log": 120.3320195,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "水上鄉",
+            "die": 1,
+            "lat": 23.4375146,
+            "log": 120.4242401,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "民雄鄉",
+            "die": 3,
+            "lat": 23.5479954,
+            "log": 120.4588059,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "竹崎鄉",
+            "die": 2,
+            "lat": 23.5049724,
+            "log": 120.6084832,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "新港鄉",
+            "die": 1,
+            "lat": 23.538123,
+            "log": 120.3550808,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "溪口鄉",
+            "die": 2,
+            "lat": 23.5925564,
+            "log": 120.4011911,
+            "img": "img/angel.png"
+        }
+    ]
+}

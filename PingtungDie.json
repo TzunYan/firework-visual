@@ -1,0 +1,61 @@
+{
+    "name": "地點",
+    "location": [
+        {
+            "name": "屏東市",
+            "die": 1,
+            "lat": 22.6558442,
+            "log": 120.4703258,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "九如鄉",
+            "die": 1,
+            "lat": 22.7416068,
+            "log": 120.4703258,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "竹田鄉",
+            "die": 1,
+            "lat": 22.5943638,
+            "log": 120.5336665,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "里港鄉",
+            "die": 1,
+            "lat": 22.7962363,
+            "log": 120.5163949,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "新埤鄉",
+            "die": 1,
+            "lat": 23.2035877,
+            "log": 120.3163427,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "新園鄉",
+            "die": 1,
+            "lat": 22.5105513,
+            "log": 120.447285,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "瑪家鄉",
+            "die": 1,
+            "lat": 22.6765932,
+            "log": 120.6775054,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "麟洛鄉",
+            "die": 1,
+            "lat": 22.6586565,
+            "log": 120.5336665,
+            "img": "img/angel.png"
+        }
+    ]
+}

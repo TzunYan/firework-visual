@@ -1,0 +1,75 @@
+{
+    "name": "地點",
+    "location": [
+        {
+            "name": "大安區",
+            "die": 3,
+            "lat": 25.0261583,
+            "log": 121.5427093,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "中山區",
+            "die": 2,
+            "lat": 25.0685406,
+            "log": 121.5280918,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "內湖區",
+            "die": 2,
+            "lat": 25.0689422,
+            "log": 121.5909027,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "北投區",
+            "die": 2,
+            "lat": 25.1151759,
+            "log": 121.515018,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "信義區",
+            "die": 1,
+            "lat": 25.0287024,
+            "log": 121.5769572,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "萬華區",
+            "die": 2,
+            "lat": 25.0262857,
+            "log": 121.4970294,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "中正區",
+            "die": 1,
+            "lat": 25.0293386,
+            "log": 121.5030736,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "文山區",
+            "die": 3,
+            "lat": 24.9929212,
+            "log": 121.57125,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "士林區",
+            "die": 3,
+            "lat": 25.0950492,
+            "log": 121.5246077,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "南港區",
+            "die": 1,
+            "lat": 25.0312347,
+            "log": 121.6111949,
+            "img": "img/angel.png"
+        }
+    ]
+}

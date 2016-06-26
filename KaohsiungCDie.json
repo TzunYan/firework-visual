@@ -1,0 +1,75 @@
+{
+    "name": "地點",
+    "location": [
+        {
+            "name": "大寮區",
+            "die": 1,
+            "lat": 22.584481,
+            "log": 120.4011911,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "大社區",
+            "die": 1,
+            "lat": 22.7377083,
+            "log": 120.3608455,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "小港區",
+            "die": 1,
+            "lat": 22.5553185,
+            "log": 120.3608455,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "前鎮區",
+            "die": 1,
+            "lat": 22.5970794,
+            "log": 120.3147208,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "林園區",
+            "die": 1,
+            "lat": 22.4986756,
+            "log": 120.4011911,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "岡山區",
+            "die": 1,
+            "lat": 22.8016472,
+            "log": 120.2858846,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "大樹區",
+            "die": 1,
+            "lat": 22.708371,
+            "log": 120.4242401,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "旗山區",
+            "die": 1,
+            "lat": 22.8702492,
+            "log": 120.4703258,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "楠梓區",
+            "die": 2,
+            "lat": 22.7175372,
+            "log": 120.3031871,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "鳳山區",
+            "die": 5,
+            "lat": 22.6113591,
+            "log": 120.3493158,
+            "img": "img/angel.png"
+        }
+    ]
+}

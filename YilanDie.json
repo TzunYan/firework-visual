@@ -1,0 +1,47 @@
+{
+    "name": "地點",
+    "location": [
+        {
+            "name": "南澳鄉",
+            "die": 2,
+            "lat": 24.4065995,
+            "log": 121.6739371,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "冬山鄉",
+            "die": 1,
+            "lat": 24.631919,
+            "log": 121.7537404,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "五結鄉",
+            "die": 2,
+            "lat": 24.6887633,
+            "log": 121.8050125,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "宜蘭市",
+            "die": 1,
+            "lat": 24.7591148,
+            "log": 121.7537404,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "礁溪鄉",
+            "die": 2,
+            "lat": 24.8068769,
+            "log": 121.7309452,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "羅東鎮",
+            "die": 1,
+            "lat": 24.675606,
+            "log": 121.7708337,
+            "img": "img/angel.png"
+        }
+    ]
+}

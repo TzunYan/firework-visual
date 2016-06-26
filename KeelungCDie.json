@@ -1,0 +1,26 @@
+{
+    "name": "地點",
+    "location": [
+        {
+            "name": "暖暖區",
+            "die": 3,
+            "lat": 25.0836163,
+            "log": 121.748042,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "安樂區",
+            "die": 1,
+            "lat": 25.1474144,
+            "log": 121.7024448,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "中正區",
+            "die": 1,
+            "lat": 24.9126201,
+            "log": 121.365895,
+            "img": "img/angel.png"
+        }
+    ]
+}

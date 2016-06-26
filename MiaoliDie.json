@@ -1,0 +1,47 @@
+{
+    "name": "地點",
+    "location": [
+        {
+            "name": "三義鄉",
+            "die": 1,
+            "lat": 24.3892633,
+            "log": 120.769476,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "卓蘭鎮",
+            "die": 1,
+            "lat": 24.3259508,
+            "log": 120.8613785,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "苗栗市",
+            "die": 1,
+            "lat": 24.5711502,
+            "log": 120.8154358,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "銅鑼鄉",
+            "die": 1,
+            "lat": 24.4481942,
+            "log": 120.792458,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "大湖鄉",
+            "die": 2,
+            "lat": 24.3980966,
+            "log": 120.8728615,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "後龍鎮",
+            "die": 2,
+            "lat": 24.6144348,
+            "log": 120.7906035,
+            "img": "img/angel.png"
+        }
+    ]
+}

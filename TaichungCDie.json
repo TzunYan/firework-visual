@@ -1,0 +1,110 @@
+{
+    "name": "地點",
+    "location": [
+        {
+            "name": "大安區",
+            "die": 1,
+            "lat": 24.3702355,
+            "log": 120.5912217,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "大里區",
+            "die": 1,
+            "lat": 24.1046899,
+            "log": 120.6812114,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "北屯區",
+            "die": 1,
+            "lat": 24.1815237,
+            "log": 120.6861019,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "后里區",
+            "die": 1,
+            "lat": 24.3088765,
+            "log": 120.7223705,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "東區",
+            "die": 1,
+            "lat": 24.1427702,
+            "log": 120.6944233,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "南屯區",
+            "die": 1,
+            "lat": 24.1471183,
+            "log": 120.6084832,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "梧棲區",
+            "die": 1,
+            "lat": 24.2479737,
+            "log": 120.5394232,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "清水區",
+            "die": 1,
+            "lat": 24.301983,
+            "log": 120.5854674,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "大雅區",
+            "die": 2,
+            "lat": 24.2225023,
+            "log": 120.6545022,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "北區",
+            "die": 2,
+            "lat": 24.1573171,
+            "log": 120.6832556,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "北區",
+            "die": 2,
+            "lat": 24.1573171,
+            "log": 120.6832556,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "西屯區",
+            "die": 2,
+            "lat": 24.1769764,
+            "log": 120.6424333,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "豐原區",
+            "die": 2,
+            "lat": 24.2521156,
+            "log": 120.7223572,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "中區",
+            "die": 3,
+            "lat": 24.1418783,
+            "log": 120.675546,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "西屯區",
+            "die": 3,
+            "lat": 24.1845973,
+            "log": 120.6087351,
+            "img": "img/angel.png"
+        }
+    ]
+}

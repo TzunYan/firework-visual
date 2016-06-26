@@ -1,0 +1,19 @@
+{
+    "name": "地點",
+    "location": [
+        {
+            "name": "西區",
+            "die": 4,
+            "lat": 23.4803964,
+            "log": 120.4242401,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "東區",
+            "die": 1,
+            "lat": 23.4853348,
+            "log": 120.4760853,
+            "img": "img/angel.png"
+        }
+    ]
+}

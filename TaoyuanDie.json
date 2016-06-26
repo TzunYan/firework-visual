@@ -1,0 +1,33 @@
+{
+    "name": "地點",
+    "location": [
+        {
+            "name": "桃園區",
+            "die": 6,
+            "lat": 24.9934099,
+            "log": 121.2969674,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "龍潭區",
+            "die": 1,
+            "lat": 24.8444927,
+            "log": 121.2053963,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "八德區",
+            "die": 2,
+            "lat": 24.9469059,
+            "log": 121.2912463,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "楊梅區",
+            "die": 1,
+            "lat": 24.9242108,
+            "log": 121.1366715,
+            "img": "img/angel.png"
+        }
+    ]
+}

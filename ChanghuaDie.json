@@ -1,0 +1,68 @@
+{
+    "name": "地點",
+    "location": [
+        {
+            "name": "大村鄉",
+            "die": 1,
+            "lat": 23.9910777,
+            "log": 120.5394232,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "田尾鄉",
+            "die": 1,
+            "lat": 23.9038461,
+            "log": 120.5221524,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "竹塘鄉",
+            "die": 1,
+            "lat": 22.709298,
+            "log": 99.80404,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "花壇鄉",
+            "die": 1,
+            "lat": 24.0288453,
+            "log": 120.5624474,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "埔鹽鄉",
+            "die": 1,
+            "lat": 23.9898141,
+            "log": 120.447285,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "福興鄉",
+            "die": 1,
+            "lat": 24.0377011,
+            "log": 120.4242401,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "芳苑鄉",
+            "die": 2,
+            "lat": 23.9455949,
+            "log": 120.3550808,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "溪湖鎮",
+            "die": 2,
+            "lat": 23.9583265,
+            "log": 120.4933624,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "員林鎮",
+            "die": 5,
+            "lat": 23.959574,
+            "log": 120.5854674,
+            "img": "img/angel.png"
+        }
+    ]
+}

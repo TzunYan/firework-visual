@@ -1,0 +1,117 @@
+{
+    "name": "地點",
+    "location": [
+        {
+            "name": "雙溪區",
+            "die": 1,
+            "lat": 24.9971842,
+            "log": 121.822098,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "新莊區",
+            "die": 1,
+            "lat": 25.0265985,
+            "log": 121.4178347,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "板橋區",
+            "die": 1,
+            "lat": 35.7511648,
+            "log": 139.7092437,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "林口區",
+            "die": 1,
+            "lat": 25.079024,
+            "log": 121.389491,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "新莊區",
+            "die": 1,
+            "lat": 25.0265985,
+            "log": 121.4178347,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "中和區",
+            "die": 1,
+            "lat": 24.9962178,
+            "log": 121.4853103,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "淡水區",
+            "die": 1,
+            "lat": 25.175579,
+            "log": 121.43847,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "新店區",
+            "die": 3,
+            "lat": 24.978282,
+            "log": 121.5394822,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "新莊區",
+            "die": 1,
+            "lat": 25.0265985,
+            "log": 121.4178347,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "永和區",
+            "die": 1,
+            "lat": 25.0103251,
+            "log": 121.5145353,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "板橋區",
+            "die": 2,
+            "lat": 35.7511648,
+            "log": 139.7092437,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "深坑區",
+            "die": 1,
+            "lat": 25.0033792,
+            "log": 121.6169002,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "三重區",
+            "die": 4,
+            "lat": 25.0614534,
+            "log": 121.4867114,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "鶯歌區",
+            "die": 2,
+            "lat": 24.9614967,
+            "log": 121.3427262,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "泰山區",
+            "die": 2,
+            "lat": 36.2558333,
+            "log": 117.1055555,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "蘆洲區",
+            "die": 1,
+            "lat": 25.0868908,
+            "log": 121.4715241,
+            "img": "img/angel.png"
+        }
+    ]
+}

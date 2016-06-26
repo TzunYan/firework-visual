@@ -1,0 +1,68 @@
+{
+    "name": "地點",
+    "location": [
+        {
+            "name": "仁愛鄉",
+            "die": 1,
+            "lat": 24.0213745,
+            "log": 121.1252135,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "竹山鎮",
+            "die": 1,
+            "lat": 23.712201,
+            "log": 120.6890055,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "信義鄉",
+            "die": 1,
+            "lat": 34.566389,
+            "log": 109.603537,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "埔里鎮",
+            "die": 1,
+            "lat": 23.9932872,
+            "log": 120.9646866,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "草屯鎮",
+            "die": 1,
+            "lat": 23.9933816,
+            "log": 120.7234992,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "魚池鄉",
+            "die": 1,
+            "lat": 23.8753852,
+            "log": 120.9187827,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "鹿谷鄉",
+            "die": 1,
+            "lat": 23.7348372,
+            "log": 120.7809676,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "名間鄉",
+            "die": 2,
+            "lat": 23.8537843,
+            "log": 120.6775054,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "南投市",
+            "die": 2,
+            "lat": 23.9179637,
+            "log": 120.6775054,
+            "img": "img/angel.png"
+        }
+    ]
+}

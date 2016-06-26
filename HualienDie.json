@@ -1,0 +1,33 @@
+{
+    "name": "地點",
+    "location": [
+        {
+            "name": "玉里鎮",
+            "die": 2,
+            "lat": 23.3898217,
+            "log": 121.3770336,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "吉安鄉",
+            "die": 2,
+            "lat": 23.9523849,
+            "log": 121.57125,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "花蓮市",
+            "die": 1,
+            "lat": 23.9871589,
+            "log": 121.6015714,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "壽豐鄉",
+            "die": 1,
+            "lat": 23.8593411,
+            "log": 121.5598345,
+            "img": "img/angel.png"
+        }
+    ]
+}

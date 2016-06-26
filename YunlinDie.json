@@ -1,0 +1,47 @@
+{
+    "name": "地點",
+    "location": [
+        {
+            "name": "二崙鄉",
+            "die": 1,
+            "lat": 23.7855171,
+            "log": 120.4011911,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "斗南鎮",
+            "die": 1,
+            "lat": 23.658401,
+            "log": 120.4933624,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "虎尾鎮",
+            "die": 1,
+            "lat": 23.7162184,
+            "log": 120.4242401,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "元長鄉",
+            "die": 1,
+            "lat": 23.6288771,
+            "log": 120.3320195,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "莿桐鄉",
+            "die": 1,
+            "lat": 23.7769338,
+            "log": 120.5394232,
+            "img": "img/angel.png"
+        },
+        {
+            "name": "口湖鄉",
+            "die": 1,
+            "lat": 23.5775853,
+            "log": 120.1704766,
+            "img": "img/angel.png"
+        }
+    ]
+}
